@@ -1,0 +1,72 @@
+@import "partials/variables";
+
+body {
+  background-color: $backgroudColor;
+}
+
+form,
+.verticalAlign {
+  height: 70vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+form > div {
+  width: 80%;
+}
+
+.formTextStyle {
+  border: solid 1px black;
+  border-radius: 100px;
+  background-color: $backgroudColor;
+  height: 8vh;
+
+  &::placeholder {
+    color: $textPlaceholderColor;
+  }
+
+  &:focus {
+    background-color: $backgroudColor;
+    color: $textColor;
+    border: solid 1px black;
+    box-shadow: none;
+  }
+}
+
+.btnPrimary {
+  color: $textColor;
+  background-color: $btnPrimaryColor;
+  width: 100%;
+  height: 8vh;
+  border-radius: 100px;
+  box-shadow: 10px 10px 10px $shadowColor;
+}
+
+.btnSecondary {
+  color: $textColor;
+  background-color: $btnSecondaryColor;
+  width: 100%;
+  height: 8vh;
+  border-radius: 100px;
+  box-shadow: 10px 10px 10px $shadowColor;
+}
+
+button {
+    width: 80% !important;
+}
+
+h1 {
+  color: $textColor;
+}
+
+img {
+  max-width: 300px;
+}
+
+i {
+  color: black;
+}
+
+a:link {
+  text-decoration: none;
+}
